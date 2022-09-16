@@ -1,9 +1,104 @@
-<! DOCTYPE html>
+<!doctype html>
 <html>
-    <body>
-        <script>
-            document.write("Wellcome to the FlexBox Problem")
-            
-        </script>
-    </body>
+<title>Example</title>
+
+<body>
+  <header>Header-Sample FlexBox</header>
+  <div id="main">
+    <article>
+        <h2>
+            JavaScript
+        </h2>
+        <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than 
+            just sit there and display static information for you to look at — displaying timely content updates,
+             interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.
+              It is the third layer of the layer cake of standard web technologies,
+             two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area. </p>
+
+    </article>
+    <article>
+        <h2>
+            HTML
+        </h2>
+        <p>HTML stands for Hyper Text Markup Language
+            HTML is the standard markup language for creating Web pages
+            HTML describes the structure of a Web page
+            HTML consists of a series of elements
+            HTML elements tell the browser how to display the content
+            HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc. </p>
+        
+    </article>
+    <article>
+        <h2>
+            CSS
+        </h2>
+        <p>CSS is the language we use to style an HTML document.
+            CSS describes how HTML elements should be displayed.
+            This tutorial will teach you CSS from basic to advanced. </p></article>
+            <img src = "htmlsccjavascriptimage.png" width ="25%">
+            <nav><h1>Nav</h1>
+
+
+                To know more <a href = "https://www.w3schools.com/html/html_intro.asp" target = "_top">Click Here</a>
+            </nav>
+    <aside><h1>Aside</h1>
+        <h4>IN Short</h4>
+        
+        <p>
+            1. HTML to define the content of web pages</p>
+  <p> 2. CSS to specify the layout of web pages</p>
+ <p>  3. JavaScript to program the behavior of web pages
+        </p>
+    </aside>
+  </div>
+  <footer>Footer</footer>
+
+  <style>
+    * {
+      box-sizing: border-box; 
+    }
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 0;
+    }
+    img{
+                display: block;
+                margin: 0 auto;
+                width: 200px;
+            }
+    #main {
+      display: flex;
+      flex: 1;
+    }
+    #main > article {
+      flex: 1;
+      order: 1;
+    }
+    #main > nav, 
+    #main > aside {
+      flex: 0 0 20vw;
+    }
+    #main > nav {
+      background: #D7E8D4;
+      order: 3;
+    }
+    #main > aside {
+      background: beige;
+      order: 2;
+    }
+    header, footer {
+        display: flex;
+      background: yellowgreen;
+      align-content: center;
+      font-weight: bold;
+      height: 20vh;
+      padding: 10px;
+    }
+    header, footer, article, nav, aside {
+      padding: 1em;
+    }
+  </style>
+</body>
 </html>
